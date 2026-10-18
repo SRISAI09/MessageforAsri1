@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#861738">
+<title>For My Chinnithalli 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--wine:#861738;--berry:#bd3158;--pink:#f5d2dc;--cream:#fff8f0;--ink:#42182a;--muted:#856473}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;background:radial-gradient(circle at 12% 10%,#ffe4d1,transparent 30%),radial-gradient(circle at 88% 60%,#f5d9e3,transparent 35%),linear-gradient(145deg,#fffaf4,#f8e8e9);overflow-x:hidden}
+button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}.app{width:min(100%,540px);min-height:100svh;margin:auto;padding:18px 20px 32px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+.bg-dots{position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#c98b9e 1px,transparent 1px);background-size:34px 34px}
+.track{height:5px;background:#ebcbd5;border-radius:10px;overflow:hidden;margin-bottom:20px}.track span{display:block;height:100%;width:14.3%;background:linear-gradient(90deg,var(--wine),#e95e88);transition:width .4s}
+.screen{display:none;animation:enter .45s ease both}.screen.active{display:block}@keyframes enter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.kicker{text-align:center;text-transform:uppercase;letter-spacing:.15em;font-size:.68rem;font-weight:700;color:#a15c73;margin:4px 0 15px}
+h1,h2{font-family:'Playfair Display',Georgia,serif;color:var(--wine);text-align:center;line-height:1.13}h1{font-size:clamp(2.4rem,9vw,3.2rem);margin:8px 0 14px}h2{font-size:clamp(1.7rem,7vw,2.15rem);margin:9px 0 13px}p{line-height:1.72;text-align:center}.sub{color:#795766;max-width:420px;margin:0 auto 22px}
+.gif-card{background:#fffdf9;padding:11px 11px 18px;border-radius:18px;max-width:390px;margin:15px auto 22px;box-shadow:0 14px 34px #5c17221c;transform:rotate(-.6deg);border:1px solid #f2dce1}.gif-card img{width:100%;height:250px;object-fit:contain;background:#fff8f5;border-radius:11px;display:block}.gif-caption{text-align:center;color:var(--wine);font-weight:800;margin:13px 4px 0}
+.hero{width:235px;height:235px;max-width:72vw;border-radius:48% 52% 45% 55%;margin:8px auto 22px;background:linear-gradient(145deg,#ffe8ee,#f2c4d1);display:grid;place-items:center;position:relative;box-shadow:inset 0 0 0 8px #ffffff80,0 18px 38px #78172f18;animation:bob 3s infinite}.hero span{font-size:6rem}.sticker{position:absolute;font-size:1.8rem!important}.s1{top:12px;right:14px}.s2{bottom:13px;left:15px}.s3{top:35px;left:12px}@keyframes bob{50%{transform:translateY(-7px) rotate(1deg)}}
+.btn{width:100%;border:0;border-radius:999px;padding:16px 18px;margin-top:11px;font-weight:800;transition:transform .2s;position:relative;overflow:hidden}.btn:active{transform:scale(.97)}.primary{color:white;background:linear-gradient(110deg,#861738,#c22f59);box-shadow:0 9px 22px #8b1a3b32}.secondary{color:var(--wine);background:#fffaf5;border:1px solid #e9c8d2}
+.back{width:42px;height:42px;border:1px solid #e8cbd4;border-radius:50%;background:#fffaf5;color:var(--wine);font-size:1.2rem;margin-bottom:9px}
+.card{background:#fffdf9e8;border:1px solid #f0d6df;border-radius:24px;padding:20px;box-shadow:0 12px 30px #7a19300d}
+.heart{font-size:6rem;text-align:center;color:#b92750;line-height:1.3;animation:pulse 1.2s infinite;touch-action:manipulation}@keyframes pulse{50%{transform:scale(1.12)}}
+.gifts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.gift{background:#fffdf9;border:1px solid #f0d5dd;border-radius:20px;min-height:145px;padding:14px 9px;color:var(--ink);box-shadow:0 8px 20px #70152b0b;transition:.2s}.gift:active{transform:scale(.96)}.gift span{display:block;font-size:2.3rem;margin-bottom:8px}.gift strong{display:block;color:var(--wine)}.gift small{display:block;color:var(--muted);line-height:1.4;margin-top:5px}
+.letter{white-space:pre-line;background:#fff8e9;border:1px solid #f1dfc5;padding:22px 19px;border-radius:6px;box-shadow:0 12px 26px #49142616;line-height:1.8;font-family:Georgia,serif}.letter strong{color:var(--wine)}
+.dialog{border:0;border-radius:25px;width:min(88vw,360px);padding:24px;background:#fffaf4;color:var(--ink);box-shadow:0 25px 70px #32081755;text-align:center}.dialog::backdrop{background:#350b1dcc;backdrop-filter:blur(5px)}.dialog .emoji{font-size:3.8rem}.dialog h2{font-size:1.8rem}
+.float{position:fixed;left:var(--x);bottom:-45px;font-size:var(--size);pointer-events:none;z-index:9;animation:fly var(--duration) ease-in forwards}@keyframes fly{0%{transform:translateY(0) rotate(0) scale(.6);opacity:0}10%{opacity:1}100%{transform:translateY(-115vh) rotate(var(--rot)) scale(1.25);opacity:0}}
+.burst{position:fixed;z-index:12;pointer-events:none;animation:burst .85s ease-out forwards}@keyframes burst{to{transform:translate(var(--dx),var(--dy)) scale(.2) rotate(65deg);opacity:0}}
+.note{font-size:.8rem;color:#a17b87;text-align:center;margin-top:15px}
+@media(max-width:360px){.app{padding-left:15px;padding-right:15px}.gif-card img{height:210px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style></head>
+<body><div class="bg-dots"></div><main class="app"><div class="track"><span id="progress"></span></div>
+
+<section class="screen active">
+<div class="kicker">a little surprise, just for you</div><div class="hero"><span>🥺</span><span class="sticker s1">💗</span><span class="sticker s2">🧸</span><span class="sticker s3">✨</span></div>
+<h1>Hey, naa chinnithalli 💗</h1>
+<p class="sub">Neekosam chinna surprise prepare chesanu, bangaram. Last varaku chudu, okay na? 🥹 Ee page lo naa sorry, hugs, kisses and lots of care unnayi. 🫂💕</p>
+<button class="btn primary" onclick="next(1,this)">Open your little surprise 💌 →</button><p class="note">Tap the buttons… little hearts may fly! ♡</p>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(0)">←</button><div class="kicker">from my heart · 01</div>
+<div class="gif-card"><img src="gifs/sorry-baby.gif" alt="A little sad baby expression"><div class="gif-caption">Naa chinnithalli, I'm really sorry 🥺</div></div>
+<h2>Friday gurinchi… 💔</h2>
+<p class="sub">Friday mana discussion gurinchi nenu alochisthunnanu, bangaram. Naa valla nuvvu edavadam naaku chala badhaga undhi. Ninnu hurt chesinandhuku from the bottom of my heart, I'm truly sorry. ❤️‍🩹</p>
+<button class="btn primary" onclick="next(2,this)">Please listen to my heart 🥺</button>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(1)">←</button><div class="kicker">from my heart · 02</div>
+<div class="gif-card"><img src="gifs/please.gif" alt="Cute characters asking for a hug"><div class="gif-caption">Please forgive me when you're ready 🧸</div></div>
+<h2>I'm not asking you to forget</h2>
+<p class="sub">Ninnu ventane forgive cheyyamani force cheyyanu, bujji. Nee feelings ki time kavali ante teesuko. Naa sorry ni naa actions tho prove cheyyali ani naaku thelusu. Nee maatalu inka baaga vinadaniki, nee feelings ni respect cheyyadaniki try chesthanu. 🫂❤️</p>
+<button class="btn primary" onclick="next(3,this)">Can I send you a hug? 🫂</button>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(2)">←</button><div class="kicker">a hug across the miles</div>
+<div class="gif-card"><img src="gifs/hug.gif" alt="Cute characters hugging"><div class="gif-caption">Imagine I'm holding you close 🤍</div></div>
+<div class="heart" id="heart">♥</div><h2 id="hugtitle">Press for a big hug, chinnithalli</h2>
+<p class="sub" id="hugtext">Nuvvu naa daggara unte ippudu tight ga hug chesukunevadini. For now, ee virtual hug accept cheyyi, bujji. 🥹💗</p>
+<button class="btn primary" onclick="hug(this)">Hold for your hug 🫂</button><button class="btn secondary" onclick="next(4,this)">Period-care time, baby 🌷</button>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(3)">←</button><div class="kicker">extra care for my girl · 01</div>
+<div class="gif-card"><img src="gifs/cat-hug.gif" alt="Cute cat hugging another cat"><div class="gif-caption">My baby deserves gentle care 🥹</div></div>
+<h2>Chinnithalli, jagratha ga undu 🌷</h2>
+<div class="card"><p>💧 <b>Water baga tagu</b>, bangaram. Konchem konchem ga thaguthu undu.</p><p>🍎 <b>Manchiga thinu</b>, bujji. Meals skip cheyyaku; fruits and nutritious food thinu.</p><p>🔥 <b>Back pain unte</b>, cloth tho cover chesina warm compress comfortable ga use cheyyi.</p><p>🛌 <b>Rest teesuko</b>. Alisipothe body ni strain cheyyaku.</p><p>🤍 Baadha ga unna naatho cheppu. Nenu dooram ga unna, nee maatalu vinadaniki ikkade unna.</p></div>
+<button class="btn primary" onclick="next(5,this)">I have more reminders, bujji 💗</button>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(4)">←</button><div class="kicker">extra care for my girl · 02</div>
+<div class="gif-card"><img src="gifs/sleepy-couple.gif" alt="Cute couple resting together"><div class="gif-caption">Rest well, my sleepy baby 🧸</div></div>
+<h2>Oii naa bangaram 😚💗</h2>
+<p class="sub">Water taggava? 💧 Manchiga thinnava? 🍎 Back pain ela undhi ippudu? 🥺 Konchem rest teesukunnava? Nuvvu anni perfect ga cheyyalsina avasaram ledhu. Ee roju slow ga unna parledu, chinnithalli. Nee health important, nee happiness important, nee feelings kuda important. ❤️</p>
+<button class="btn primary" onclick="next(6,this)">One last message from me 💌</button>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(5)">←</button><div class="kicker">a little letter from me</div>
+<div class="gif-card"><img src="gifs/couple-cuddle.gif" alt="A cute couple cuddling"><div class="gif-caption">If only I could be there right now 💗</div></div>
+<div class="letter"><strong>To my dearest chinnithalli, ❤️</strong>
+
+Nuvvu naa life lo chala special. Friday jarigindhi marchipoyi ventane normal avvali ani ninnu adaganu. Nee heart hurt ayithe, neeku time ivvadam kuda important.
+
+I'm genuinely sorry for the tears and hurt I caused you, bangaram. Naa intention ala kaakapoyina, nuvvu feel ayina pain important. Ninnu better ga understand chesukovadaniki nenu effort pedathanu.
+
+Nuvvu naa daggara unte nee cheyyi pattukoni, forehead meedha oka kiss ichi, "I'm here, chinnithalli" ani cheppevadini. 🥺💋
+
+Water baga tagu, manchiga thinu, back pain unte jagratha ga undu, rest teesuko, naa bangaram.
+
+Nuvvu ready ayinappudu manam calm ga matladukundham. Nee feelings vinadaniki nenu ready ga untanu.
+
+<strong>I'm sorry, my love. You deserve care, patience, respect, and love—not just words, but actions too. ❤️</strong>
+
+Forever sending hugs to my chinnithalli. 🧸💋💗</div>
+<button class="btn primary" onclick="next(7,this)">Open your little gifts 🎁</button>
+</section>
+
+<section class="screen">
+<button class="back" onclick="next(6)">←</button><div class="kicker">tiny gifts · unlimited love</div><h2>Little gifts for my girl 🎁</h2><p class="sub">Tap each gift to open it, bangaram.</p>
+<div class="gifts">
+<button class="gift" onclick="gift('🧸','Unlimited cuddle pass','Valid for unlimited hugs, tight cuddles, forehead kisses, and sitting beside you whenever you need me. Redeem in person soon, chinnithalli. ❤️')"><span>🧸</span><strong>Cuddle pass</strong><small>Unlimited hugs</small></button>
+<button class="gift" onclick="gift('💋','Forehead kisses','One soft forehead kiss for every cramp, every worry, and every moment you miss me. 💗')"><span>💋</span><strong>Kiss voucher</strong><small>Unlimited kisses</small></button>
+<button class="gift" onclick="gift('🌷','One flower for you','For the girl who deserves gentle words, a peaceful heart, and so many reasons to smile. 🌷')"><span>🌷</span><strong>Flower for you</strong><small>All my love</small></button>
+<button class="gift" onclick="gift('🍫','Sweet treat voucher','One favourite chocolate or snack of your choice, plus a phone call where you get all my attention. 🥹')"><span>🍫</span><strong>Sweet treat</strong><small>Chosen by you</small></button>
+</div><button class="btn primary" onclick="next(8,this)">One final surprise ✨</button>
+</section>
+
+<section class="screen">
+<div class="kicker">miles apart · hearts together</div><div class="hero"><span>🐻‍❄️</span><span class="sticker s1">💕</span><span class="sticker s2">💌</span><span class="sticker s3">✨</span></div>
+<h1>Naa chinnithalli, you are so loved ❤️</h1>
+<p class="sub">Nuvvu ready ayinappudu manam matladukundham. Ee chinna website neeku konchem smile, comfort and love feel cheyinchali ani naa wish. Distance entha unna, I am sending you one more big hug. 🫂💗</p>
+<div class="card"><p style="font-weight:700;color:var(--wine);margin:0">Miles between us 🌙<br>But my heart is with you ❤️</p></div>
+<button class="btn primary" onclick="next(0,this);hearts(22)">Replay our little love story ↻</button>
+<button class="btn secondary" onclick="share()">Send me a little message 💬</button>
+<p class="note">P.S. If your pain is unusually severe or worrying, please get medical advice, sweetheart. ♡</p>
+</section>
+</main>
+<dialog class="dialog" id="giftDialog"><div class="emoji" id="dEmoji">💗</div><h2 id="dTitle">A little gift</h2><p id="dBody"></p><button class="btn primary" onclick="document.getElementById('giftDialog').close();hearts(12)">Accept with love 💞</button></dialog>
+<script>
+const screens=[...document.querySelectorAll('.screen')],bar=document.getElementById('progress');
+function next(n,el){if(el){const r=el.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2);hearts(6)}screens.forEach((s,i)=>s.classList.toggle('active',i===n));bar.style.width=((n+1)/screens.length*100)+'%';window.scrollTo({top:0,behavior:'smooth'});if(n===0)hearts(4)}
+function burst(x,y){for(let i=0;i<10;i++){const e=document.createElement('span');e.className='burst';e.textContent=['💗','💕','✨','💖','♡'][i%5];e.style.left=x+'px';e.style.top=y+'px';e.style.setProperty('--dx',(Math.random()*180-90)+'px');e.style.setProperty('--dy',(Math.random()*-150-25)+'px');document.body.appendChild(e);setTimeout(()=>e.remove(),900)}}
+function hearts(n=1){for(let i=0;i<n;i++)setTimeout(()=>{const e=document.createElement('span');e.className='float';e.textContent=['💗','💖','💕','❤️','✨','🌸','🫶','💌'][Math.floor(Math.random()*8)];e.style.setProperty('--x',Math.random()*95+'vw');e.style.setProperty('--size',(18+Math.random()*27)+'px');e.style.setProperty('--duration',(3.5+Math.random()*2.5)+'s');e.style.setProperty('--rot',(Math.random()*100-50)+'deg');document.body.appendChild(e);setTimeout(()=>e.remove(),6200)},i*75)}
+function hug(el){document.getElementById('hugtitle').textContent='Hug delivered, chinnithalli! 🥹';document.getElementById('hugtext').textContent='Squeeeze! Imagine I am holding you close and reminding you how loved you are. One more? 💗';el.textContent='Sending extra kisses 💋';burst(innerWidth/2,innerHeight/2);hearts(30)}
+function gift(emoji,title,body){document.getElementById('dEmoji').textContent=emoji;document.getElementById('dTitle').textContent=title;document.getElementById('dBody').textContent=body;document.getElementById('giftDialog').showModal();hearts(7)}
+function share(){const msg="I opened your little love surprise and I'm sending you a big hug back. ❤️";if(navigator.share)navigator.share({title:'A little message for you',text:msg}).catch(()=>{});else if(navigator.clipboard)navigator.clipboard.writeText(msg).then(()=>alert('Message copied 💗')).catch(()=>alert(msg));else alert(msg)}
+setTimeout(()=>hearts(8),400);
+</script></body></html>
